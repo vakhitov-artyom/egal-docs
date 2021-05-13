@@ -1,0 +1,11 @@
+version: "3.6"
+services:
+  docsify:
+    container_name: docsify
+    build:
+      context: .
+    volumes:
+      - .:/usr/local/docsify
+    ports:
+      - published: 3000
+        target: 3000
