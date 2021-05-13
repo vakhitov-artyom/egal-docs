@@ -81,7 +81,7 @@ services:
 ```yaml
  web-service:
    container_name: ${PROJECT_NAME}-web-service
-   image: harbor.smw.tom.ru/egal/web-service:v2.0.0beta17
+   image: egalbox/web-service:2.0.0beta19
    ports:
      - ${WEB_SERVICE_PORT:-81}:8080
    environment:
@@ -96,7 +96,7 @@ services:
 
  auth-service:
   container_name: ${PROJECT_NAME}-auth-service
-  image: harbor.smw.tom.ru/egal/auth-service:v2.0.0beta18
+  image: egalbox/auth-service:2.0.0beta20
   environment:
     APP_SERVICE_NAME: auth
     APP_SERVICE_KEY: uZn35FJAx@sg*eczrv6ITjLVWU#Xiw2Y
